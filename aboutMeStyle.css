@@ -1,0 +1,155 @@
+body {
+    margin: 50px 200px;
+}
+
+header {
+  display: flex;
+  justify-content: space-between; /* pushes left & right apart */
+  align-items: center;            /* keeps them on same horizontal line */
+  padding: 10px 20px;
+}
+
+.logo img {
+  width: 180px;  /* adjust your logo size */
+  height: auto;
+}
+
+nav a {
+  margin-left: 20px;
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+}
+.aboutIdle{
+    width: 40px;
+    height: auto;
+}
+.aboutMeIcon{
+    width: 40px;
+    height: auto;
+}
+.designIcon{
+    width: 120px;
+    height: auto;
+}
+
+.illustrationIcon{
+    width: 170px;
+    height: auto;
+}
+
+.MainImg{
+    width: 100%;
+    height: auto;
+}
+.introductionContainer{
+    width: 400px;
+    height: 350px;
+    padding-top: 20px;
+}
+
+.pfp{
+    width: 350px;
+    height: auto;
+}
+
+.wrapper {
+  display: flex;
+  gap: 0px; /* space between boxes */
+  margin-bottom: 50px;
+  margin-top: 30px;
+}
+
+body {
+  cursor: url("imgHeader/cursor.png"), auto;
+}
+a:hover {
+  cursor: url("imgHeader/cursorHover.png"), pointer;
+}
+.not-allowed {
+  cursor: url("imgHeader/cursorUnavailable"), not-allowed;
+}
+
+.skillComponent{
+  display: flex;
+  flex-direction: column;
+  align-items: start;  
+  width: 100%;
+  padding-bottom: 20px;
+}
+
+.skillDescription{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
+  font-family: 'fontDescription';
+  font-size: 18px;
+  padding-top: 10px;
+}
+
+.dots {
+  flex: 1;
+  border-bottom: 2px dotted #858585;
+  margin: 0 10px;
+}
+
+.skillImg{
+  width: 50px;
+  height: auto;
+  padding-right: 5px;
+}
+.skillSet{
+  padding-left: 25px;
+  padding-top: 20px;
+  width: 100%;
+}
+.skillImgTitle{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+}
+
+@font-face {
+  font-family: 'fontTitle';
+  src: url('fonts/NikkyouSans-mLKax.ttf') format('truetype');
+}
+
+.skillImgTitle p {
+  font-family: 'fontTitle', sans-serif;
+  font-weight: 400; /* or whatever default you want */
+  font-size: 20px;
+}
+
+.skillImgTitle p {
+  margin: 0px;
+}
+
+@font-face {
+  font-family: 'fontDescription';
+  src: url(fonts/后弃\ 2020\ Medium.ttf);
+}
+
+.nameTitle{
+  font-family: 'fontTitle' , sans-serif;
+  font-size: 40px;
+  border-style: outset;
+  border-color: black;
+  border-radius: 0px;
+  display: flex;
+  align-items: center;
+  padding-bottom: 5px;
+  padding-left: 20px;
+  background-color: black;
+  
+}
+.nameTitle p {
+  margin: 0px;
+  color: white;
+}
+.nameDescription{
+  font-family: 'fontDescription';
+  font-size: 18px;
+  line-height: 1.5;
+}

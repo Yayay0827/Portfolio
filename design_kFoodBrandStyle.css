@@ -1,0 +1,50 @@
+body {
+    margin: 50px 200px;
+}
+
+header {
+  display: flex;
+  justify-content: space-between; /* pushes left & right apart */
+  align-items: center;            /* keeps them on same horizontal line */
+  padding: 10px 20px;
+}
+
+.logo img {
+  width: 180px;  /* adjust your logo size */
+  height: auto;
+}
+
+nav a {
+  margin-left: 20px;
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+}
+.aboutIdle{
+    width: 40px;
+    height: auto;
+}
+.aboutMeIcon{
+    width: 40px;
+    height: auto;
+}
+.designIcon{
+    width: 120px;
+    height: auto;
+}
+
+.bookTypoImg{
+    max-width: 100%;
+    margin-top: 20px;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* 2 equal columns */
+  gap: 20px;
+}
+
+.gallery img {
+  width: 100%;
+  object-fit: cover;
+}

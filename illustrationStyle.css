@@ -1,0 +1,93 @@
+body {
+    margin: 50px 200px;
+}
+
+html {
+  overflow-y: scroll;
+}
+
+header {
+  display: flex;
+  justify-content: space-between; /* pushes left & right apart */
+  align-items: center;            /* keeps them on same horizontal line */
+  padding: 10px 20px;
+}
+
+.logo img {
+  width: 180px;  /* adjust your logo size */
+  height: auto;
+}
+
+nav a {
+  margin-left: 20px;
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+}
+.aboutIdle{
+    width: 40px;
+    height: auto;
+}
+.aboutMeIcon{
+    width: 40px;
+    height: auto;
+}
+.designIcon{
+    width: 120px;
+    height: auto;
+}
+
+.illustrationIcon{
+    width: 170px;
+    height: auto;
+}
+
+.MainImg{
+    width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.galleryGrid {
+  column-count: 3;
+  column-gap: 20px;
+}
+
+.galleryGrid img {
+  width: 100%;
+  margin-bottom: 20px;
+  display: block;
+}
+
+.galleryWhole{
+    margin-bottom: 20px;
+}
+
+
+.overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(255, 255, 255, 0.6); /* white transparent layer */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+  z-index: 999;
+}
+
+/* When active */
+.overlay.active {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+/* Big image */
+.overlay img {
+  max-width: 80vw;
+  max-height: 80vh;
+  object-fit: contain;
+  box-shadow: 0 10px 40px rgba(0,0,0,0.2);
+}
