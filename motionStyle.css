@@ -57,29 +57,11 @@ nav a {
 }
 
 .video-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 80px;
-  padding: 50px 200px;
-}
-
-.video-item {
   width: 100%;
-  aspect-ratio: 16 / 9; /* keeps video proportions */
+  margin-top: 100px;
 }
-
-.video-item iframe {
+.video-grid iframe {
   width: 100%;
-  height: 100%;
-  border: none;
-}
-
-/* Zigzag positioning */
-.video-item.left {
-  grid-column: 1;
-}
-
-.video-item.right {
-  grid-column: 2;
-  
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
