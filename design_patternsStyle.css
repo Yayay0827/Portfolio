@@ -33,6 +33,11 @@ nav a {
     height: auto;
 }
 
+.motionIcon{
+    width: 120px;
+    height: auto;
+}
+
 .bookTypoImg{
   max-width: 50%;
   width: 100%;        /* lets it scale down nicely */

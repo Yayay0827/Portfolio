@@ -1,0 +1,85 @@
+body {
+    margin: 50px 200px;
+}
+
+header {
+  display: flex;
+  justify-content: space-between; /* pushes left & right apart */
+  align-items: center;            /* keeps them on same horizontal line */
+  padding: 10px 20px;
+}
+
+.logo img {
+  width: 180px;  /* adjust your logo size */
+  height: auto;
+}
+
+nav a {
+  margin-left: 20px;
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+}
+.aboutIdle{
+    width: 40px;
+    height: auto;
+}
+.aboutMeIcon{
+    width: 40px;
+    height: auto;
+}
+.designIcon{
+    width: 120px;
+    height: auto;
+}
+
+.illustrationIcon{
+    width: 170px;
+    height: auto;
+}
+
+.motionIcon{
+    width: 120px;
+    height: auto;
+}
+
+
+
+.videoWrapper {
+  height: 70vh;
+  overflow: hidden;
+}
+
+.hero-video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.video-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 80px;
+  padding: 50px 200px;
+}
+
+.video-item {
+  width: 100%;
+  aspect-ratio: 16 / 9; /* keeps video proportions */
+}
+
+.video-item iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+/* Zigzag positioning */
+.video-item.left {
+  grid-column: 1;
+}
+
+.video-item.right {
+  grid-column: 2;
+  
+}
