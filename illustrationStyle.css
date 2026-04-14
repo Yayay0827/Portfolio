@@ -47,15 +47,52 @@ nav a {
     height: auto;
 }
 
-.MainImg{
-    width: 100%;
-    height: auto;
-    margin-bottom: 20px;
+.mainImg{
+  display: flex;
+  width: 100vw;        /* full window width */
+}
+.mainImg img {
+  height: 420px;     /* same height */
+  width: auto;       /* preserve aspect ratio */
+}
+
+.headerImg{
+  width: 100%;
+  height: auto;
+  margin-bottom: 50px;
+}
+
+@font-face {
+  font-family: 'fontTitle';
+  src: url('fonts/NikkyouSans-mLKax.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'fontDescription';
+  src: url(fonts/后弃\ 2020\ Medium.ttf);
+}
+
+
+
+.illuTitle{
+  background-color: black;
+  color: white;
+  font-family: 'fontTitle';
+  font-size: 40px;
+  height: 74px;
+    display: flex;
+  align-items: center;     /* vertical center */
+  justify-content: flex-start; /* keep text on the left */
+  padding-bottom: 5px;
+  padding-left: 20px;
+  margin-bottom: 50px;
+
 }
 
 .galleryGrid {
   column-count: 3;
   column-gap: 20px;
+  
 }
 
 .galleryGrid img {

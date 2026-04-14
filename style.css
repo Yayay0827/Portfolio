@@ -141,7 +141,6 @@ a:hover {
   font-size: 40px;
   border-style: outset;
   border-color: black;
-  border-radius: 0px;
   display: flex;
   align-items: center;
   padding-bottom: 5px;
@@ -157,7 +156,53 @@ a:hover {
   font-family: 'fontDescription';
   font-size: 18px;
   line-height: 1.5;
+  margin-bottom: 50px;
 }
+
+
 .bottomContact{
-  
+
+  background-color: black;
+  color: white;
+  height: 250px;
+
+  width: 100vw;              /* full screen width */
+  position: relative;
+
+  margin-left: calc(-50vw + 50%);  /* breaks out of body margins */
+  margin-right: calc(-50vw + 50%);
+  padding: 40px 200px;
+  display: flex;
+  flex-direction: row;
+  gap: 500px;
+
+}
+
+.contactTitle {
+  font-family: 'fontTitle';
+  font-size: 20px;
+}
+.contactDescription{
+  font-family: 'fontDescription';
+  font-size: 18px;
+}
+
+.socialIcons{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 20px;
+}
+
+.X {
+  width: 40px;
+  height: auto;
+}
+.insta {
+    width: 40px;
+  height: auto;
+}
+.youtube{
+  width: 45px;
+  height: auto;
 }
