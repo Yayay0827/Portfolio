@@ -1,5 +1,5 @@
 body {
-    margin: 50px 200px;
+  margin: 50px 200px 0px 200px; /* remove bottom margin */
 }
 
 header {
@@ -7,6 +7,16 @@ header {
   justify-content: space-between; /* pushes left & right apart */
   align-items: center;            /* keeps them on same horizontal line */
   padding: 10px 20px;
+}
+
+body {
+  cursor: url("imgHeader/cursor.png"), auto;
+}
+a:hover {
+  cursor: url("imgHeader/cursorHover.png"), pointer;
+}
+.not-allowed {
+  cursor: url("imgHeader/cursorUnavailable"), not-allowed;
 }
 
 .logo img {
@@ -58,4 +68,51 @@ nav a {
 .gallery img {
   width: 100%;
   object-fit: cover;
+}
+
+.bottomContact{
+
+  background-color: black;
+  color: white;
+  height: 250px;
+
+  width: 100%;              /* full screen width */
+  position: relative;
+
+  margin-left: calc(-50vw + 50%);  /* breaks out of body margins */
+  margin-right: calc(-50vw + 50%);
+  padding: 40px 200px;
+  display: flex;
+  flex-direction: row;
+  gap: 500px;
+
+}
+
+.contactTitle {
+  font-family: 'fontTitle';
+  font-size: 20px;
+}
+.contactDescription{
+  font-family: 'fontDescription';
+  font-size: 18px;
+}
+
+.socialIcons{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 20px;
+}
+
+.X {
+  width: 40px;
+  height: auto;
+}
+.insta {
+    width: 40px;
+  height: auto;
+}
+.youtube{
+  width: 45px;
+  height: auto;
 }

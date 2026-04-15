@@ -1,5 +1,5 @@
 body {
-    margin: 50px 200px;
+  margin: 50px 200px 0px 200px; /* remove bottom margin */
 }
 
 header {
@@ -166,7 +166,7 @@ a:hover {
   color: white;
   height: 250px;
 
-  width: 100vw;              /* full screen width */
+  width: 100%;              /* full screen width */
   position: relative;
 
   margin-left: calc(-50vw + 50%);  /* breaks out of body margins */
