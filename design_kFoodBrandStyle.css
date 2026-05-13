@@ -115,3 +115,32 @@ nav a {
   width: 45px;
   height: auto;
 }
+
+.Designdescription{
+  font-family: 'fontDescription';
+  font-size: 18px;
+}
+
+
+.subTitle{
+  font-family: 'fontTitle';
+  font-size: 40px;
+  background-color: black;
+  color: white;
+}
+
+.subTitle p {
+  margin-top: 10px;
+  padding-bottom: 5px;
+  padding-left: 10px;
+}
+
+@font-face {
+  font-family: 'fontTitle';
+  src: url(fonts/NikkyouSans-mLKax.ttf);
+}
+
+@font-face {
+  font-family: 'fontDescription';
+  src: url(fonts/后弃\ 2020\ Medium.ttf);
+}
